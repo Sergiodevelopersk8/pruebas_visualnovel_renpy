@@ -30,7 +30,7 @@ label start:
     #dissolve  hace desaparecer gradualmente el personaje
     with dissolve
 
-
+    #mensaje de que se termino el juego
     "Se termina el juego"
     
 
