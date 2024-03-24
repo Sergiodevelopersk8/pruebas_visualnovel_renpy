@@ -4,6 +4,12 @@ define reina = Character('Reina  Eileen', color ="#C28110")
 define mago = Character('mago', color= "#A28110")
 
 
+# creamos una flag osea una variable
+default nombre = False
+
+
+
+
 
 #imagenes 
 # image backgroundpng = "bg washington"
@@ -62,9 +68,31 @@ menu:
 return
 
 label nombre:
-        mago "Un gusto conocerte"
-return
+    #cambiar la variable su valor
+    $ nombre = True
+    mago "Un gusto conocerte"
+    jump terminar        
+
 
 label nonombre1:
-    mago "que grosero"
-return        
+    mago "que pinche mamon eres"
+
+    jump terminar        
+
+label terminar:
+
+if nombre:
+    mago "Recuerdo que me disjiste tu nombre"
+else:
+    mago "Recuerdo que no me disjiste tu nombre"
+
+
+
+
+
+
+
+
+
+
+
