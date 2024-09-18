@@ -3,7 +3,6 @@ define reina = Character('Reina  Eileen', color ="#C28110")
 
 define mago = Character('mago', color= "#A28110")
 
-
 # creamos una flag osea una variable
 default nombre = False
 
@@ -16,6 +15,7 @@ default nombre = False
 image backgroundpng = "Futon_Room.png"
 
 image ReinaE = "eileen happy.png"
+
 image magoE = "mago.png"
 
 #inicio del juego
@@ -39,7 +39,8 @@ label start:
     with fade
 
     reina "Yo soy la reina"
-    show magoE at left
+    # show magoE at topleft 
+    show magoE at Position(xpos = 100,ypos= 850)  
     play sound "audio/BongoMenu3.wav"
     reina "me voy"
     #hide oculta  a un personaje  y lo elimina de la escena,
